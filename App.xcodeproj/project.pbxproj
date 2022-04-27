@@ -25,6 +25,9 @@
 		E77C213828190FCE00F6D86C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77C213728190FCE00F6D86C /* ProfileViewController.swift */; };
 		E7979816281917B2006123A8 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979815281917B1006123A8 /* AddPhotoView.swift */; };
 		E7979819281920B1006123A8 /* UISegmentControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979818281920B1006123A8 /* UISegmentControl + Extension.swift */; };
+		E797981C28192897006123A8 /* ChatViewComtroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797981B28192897006123A8 /* ChatViewComtroller.swift */; };
+		E797982728192A30006123A8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797982628192A30006123A8 /* TabBarController.swift */; };
+		E797982A28192A88006123A8 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797982928192A88006123A8 /* UsersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		E77C213728190FCE00F6D86C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E7979815281917B1006123A8 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		E7979818281920B1006123A8 /* UISegmentControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentControl + Extension.swift"; sourceTree = "<group>"; };
+		E797981B28192897006123A8 /* ChatViewComtroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewComtroller.swift; sourceTree = "<group>"; };
+		E797982628192A30006123A8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E797982928192A88006123A8 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +89,8 @@
 				E73235BC2818628900874037 /* Application */,
 				E73235BB2818627F00874037 /* Resourses */,
 				E73235A8281857B800874037 /* Extension */,
-				E732357F2817B93C00874037 /* MainVc.swift */,
-				E73235B82818627A00874037 /* SignUpViewController.swift */,
-				E77C21342818F93000F6D86C /* SignInViewController.swift */,
-				E77C213728190FCE00F6D86C /* ProfileViewController.swift */,
+				E797981E28192974006123A8 /* SignInModules */,
+				E7979823281929DF006123A8 /* ChatModules */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -141,6 +145,59 @@
 				E732357D2817B93C00874037 /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		E797981E28192974006123A8 /* SignInModules */ = {
+			isa = PBXGroup;
+			children = (
+				E7979822281929B2006123A8 /* ProfileModule */,
+				E7979821281929A6006123A8 /* SignInModule */,
+				E797982028192999006123A8 /* SignUpModule */,
+				E797981F2819298F006123A8 /* MainModule */,
+			);
+			path = SignInModules;
+			sourceTree = "<group>";
+		};
+		E797981F2819298F006123A8 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				E732357F2817B93C00874037 /* MainVc.swift */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		E797982028192999006123A8 /* SignUpModule */ = {
+			isa = PBXGroup;
+			children = (
+				E73235B82818627A00874037 /* SignUpViewController.swift */,
+			);
+			path = SignUpModule;
+			sourceTree = "<group>";
+		};
+		E7979821281929A6006123A8 /* SignInModule */ = {
+			isa = PBXGroup;
+			children = (
+				E77C21342818F93000F6D86C /* SignInViewController.swift */,
+			);
+			path = SignInModule;
+			sourceTree = "<group>";
+		};
+		E7979822281929B2006123A8 /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				E77C213728190FCE00F6D86C /* ProfileViewController.swift */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
+		E7979823281929DF006123A8 /* ChatModules */ = {
+			isa = PBXGroup;
+			children = (
+				E797981B28192897006123A8 /* ChatViewComtroller.swift */,
+				E797982628192A30006123A8 /* TabBarController.swift */,
+				E797982928192A88006123A8 /* UsersViewController.swift */,
+			);
+			path = ChatModules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +271,8 @@
 			files = (
 				E73235BF281866CF00874037 /* OneLineTextField.swift in Sources */,
 				E73235B92818627A00874037 /* SignUpViewController.swift in Sources */,
+				E797981C28192897006123A8 /* ChatViewComtroller.swift in Sources */,
+				E797982728192A30006123A8 /* TabBarController.swift in Sources */,
 				E73235992818506D00874037 /* UIFont + Extension.swift in Sources */,
 				E7979819281920B1006123A8 /* UISegmentControl + Extension.swift in Sources */,
 				E73235A22818549500874037 /* UILabel + Extension.swift in Sources */,
@@ -228,6 +287,7 @@
 				E732357E2817B93C00874037 /* SceneDelegate.swift in Sources */,
 				E732359628184D7F00874037 /* UIButton + Extension.swift in Sources */,
 				E73235AC2818591500874037 /* ButtonView.swift in Sources */,
+				E797982A28192A88006123A8 /* UsersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
