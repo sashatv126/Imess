@@ -27,7 +27,7 @@ class ButtonView : UIView {
             button.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             button.heightAnchor.constraint(equalToConstant: 60)
         ])
-        bottomAnchor.constraint(equalTo: button.bottomAnchor).isActive = true
+        self.bottomAnchor.constraint(equalTo: button.bottomAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {

@@ -27,4 +27,18 @@ extension UIButton {
             self.layer.shadowOffset = CGSize(width: 0, height: 4)
         }
     }
+    
+    func addImageButton() {
+        let logo = UIImageView(image: #imageLiteral(resourceName: "google"), contentMode: .scaleAspectFit)
+        logo.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(logo)
+        
+        NSLayoutConstraint.activate([
+            logo.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 24),
+            logo.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            logo.heightAnchor.constraint(equalToConstant: 25),
+            logo.widthAnchor.constraint(equalToConstant: 25)
+        ])
+       
+    }
 }

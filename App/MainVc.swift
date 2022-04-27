@@ -11,7 +11,7 @@ class MainVc: UIViewController {
     
 //MARK: -Image
     private lazy var logoIm : UIImageView = {
-        let image = UIImageView(image: #imageLiteral(resourceName: "gg"), contentMode: .scaleAspectFit)
+        let image = UIImageView(image: #imageLiteral(resourceName: "logo"), contentMode: .scaleAspectFit)
         return image
     }()
     
@@ -40,6 +40,7 @@ class MainVc: UIViewController {
     }()
     private lazy var googleButton : UIButton = {
         let button = UIButton(title: "Google", titleColor: .white, backGroundColor: .buttonDark(), isShadow: true)
+        button.addImageButton()
         return button
     }()
 

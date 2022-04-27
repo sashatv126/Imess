@@ -39,6 +39,7 @@ class SignInViewController : UIViewController {
     
     private lazy var googleButton : UIButton = {
         let button = UIButton(title: "Google", titleColor: .black, backGroundColor: .white, isShadow: true)
+        button.addImageButton()
         return button
     }()
     private lazy var signUpButton : UIButton = {
@@ -73,7 +74,7 @@ extension SignInViewController {
         let stackView = UIStackView(arrangedSubviews:
                                     [loginWithView, oRLabel , emailStackView, passwordStackView, loginButton],
                                     axis: .vertical,
-                                    spacing: 30)
+                                    spacing: 40)
         
         let bottomStackView = UIStackView(arrangedSubviews:
                                          [registerlabel, signUpButton],
@@ -95,7 +96,7 @@ extension SignInViewController {
         ])
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 90),
+            stackView.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 40),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -40)
         ])
