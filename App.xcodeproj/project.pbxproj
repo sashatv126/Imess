@@ -28,6 +28,9 @@
 		E797981C28192897006123A8 /* ChatViewComtroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797981B28192897006123A8 /* ChatViewComtroller.swift */; };
 		E797982728192A30006123A8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797982628192A30006123A8 /* TabBarController.swift */; };
 		E797982A28192A88006123A8 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797982928192A88006123A8 /* UsersViewController.swift */; };
+		E797984828196F2C006123A8 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797984728196F2C006123A8 /* CoordinatorProtocol.swift */; };
+		E797984E28196F4B006123A8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797984D28196F4B006123A8 /* Coordinator.swift */; };
+		E79798562819713D006123A8 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79798552819713D006123A8 /* UIViewController + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		E797981B28192897006123A8 /* ChatViewComtroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewComtroller.swift; sourceTree = "<group>"; };
 		E797982628192A30006123A8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E797982928192A88006123A8 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		E797984728196F2C006123A8 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		E797984D28196F4B006123A8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E79798552819713D006123A8 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 		E732357A2817B93C00874037 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E797984628196F0C006123A8 /* Coordinator */,
 				E797983128193574006123A8 /* Builder */,
 				E73235BC2818628900874037 /* Application */,
 				E73235BB2818627F00874037 /* Resourses */,
@@ -106,6 +113,7 @@
 				E73235A52818556C00874037 /* UIImageView + Extension.swift */,
 				E73235B028185FC900874037 /* UIStackView + Extension.swift */,
 				E7979818281920B1006123A8 /* UISegmentControl + Extension.swift */,
+				E79798552819713D006123A8 /* UIViewController + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -376,6 +384,23 @@
 			path = UsersView;
 			sourceTree = "<group>";
 		};
+		E797984628196F0C006123A8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E797985028196F54006123A8 /* Protocols */,
+				E797984D28196F4B006123A8 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E797985028196F54006123A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E797984728196F2C006123A8 /* CoordinatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,11 +472,14 @@
 			files = (
 				E73235BF281866CF00874037 /* OneLineTextField.swift in Sources */,
 				E73235B92818627A00874037 /* SignUpViewController.swift in Sources */,
+				E797984828196F2C006123A8 /* CoordinatorProtocol.swift in Sources */,
 				E797981C28192897006123A8 /* ChatViewComtroller.swift in Sources */,
 				E797982728192A30006123A8 /* TabBarController.swift in Sources */,
 				E73235992818506D00874037 /* UIFont + Extension.swift in Sources */,
+				E797984E28196F4B006123A8 /* Coordinator.swift in Sources */,
 				E7979819281920B1006123A8 /* UISegmentControl + Extension.swift in Sources */,
 				E73235A22818549500874037 /* UILabel + Extension.swift in Sources */,
+				E79798562819713D006123A8 /* UIViewController + Extension.swift in Sources */,
 				E77C213828190FCE00F6D86C /* ProfileViewController.swift in Sources */,
 				E73235802817B93C00874037 /* MainVc.swift in Sources */,
 				E77C21352818F93000F6D86C /* SignInViewController.swift in Sources */,
