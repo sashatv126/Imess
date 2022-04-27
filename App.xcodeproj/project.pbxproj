@@ -86,6 +86,7 @@
 		E732357A2817B93C00874037 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E797983128193574006123A8 /* Builder */,
 				E73235BC2818628900874037 /* Application */,
 				E73235BB2818627F00874037 /* Resourses */,
 				E73235A8281857B800874037 /* Extension */,
@@ -112,6 +113,7 @@
 		E73235A8281857B800874037 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E797982D2819354E006123A8 /* TabBar */,
 				E73235AE28185A9800874037 /* Views */,
 				E732359E281853BD00874037 /* UIKit */,
 			);
@@ -161,7 +163,9 @@
 		E797981F2819298F006123A8 /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				E732357F2817B93C00874037 /* MainVc.swift */,
+				E797983D28193634006123A8 /* MainModel */,
+				E797983C28193618006123A8 /* MainView */,
+				E797983B2819360F006123A8 /* MainViewModel */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -169,7 +173,9 @@
 		E797982028192999006123A8 /* SignUpModule */ = {
 			isa = PBXGroup;
 			children = (
-				E73235B82818627A00874037 /* SignUpViewController.swift */,
+				E797983A281935F6006123A8 /* SignUpModel */,
+				E7979839281935EE006123A8 /* SignUpView */,
+				E7979838281935E4006123A8 /* SignUpViewModel */,
 			);
 			path = SignUpModule;
 			sourceTree = "<group>";
@@ -177,7 +183,9 @@
 		E7979821281929A6006123A8 /* SignInModule */ = {
 			isa = PBXGroup;
 			children = (
-				E77C21342818F93000F6D86C /* SignInViewController.swift */,
+				E7979837281935CB006123A8 /* SignInModel */,
+				E7979836281935BC006123A8 /* SignInViewModel */,
+				E7979835281935A7006123A8 /* SignInView */,
 			);
 			path = SignInModule;
 			sourceTree = "<group>";
@@ -185,7 +193,9 @@
 		E7979822281929B2006123A8 /* ProfileModule */ = {
 			isa = PBXGroup;
 			children = (
-				E77C213728190FCE00F6D86C /* ProfileViewController.swift */,
+				E797983428193597006123A8 /* ProfileView */,
+				E79798332819358F006123A8 /* ProfileModel */,
+				E797983228193580006123A8 /* PofileViewModel */,
 			);
 			path = ProfileModule;
 			sourceTree = "<group>";
@@ -193,11 +203,177 @@
 		E7979823281929DF006123A8 /* ChatModules */ = {
 			isa = PBXGroup;
 			children = (
-				E797981B28192897006123A8 /* ChatViewComtroller.swift */,
-				E797982628192A30006123A8 /* TabBarController.swift */,
-				E797982928192A88006123A8 /* UsersViewController.swift */,
+				E797982C2819353D006123A8 /* ChatModule */,
+				E797982F2819355B006123A8 /* UsersModule */,
 			);
 			path = ChatModules;
+			sourceTree = "<group>";
+		};
+		E797982C2819353D006123A8 /* ChatModule */ = {
+			isa = PBXGroup;
+			children = (
+				E79798402819365A006123A8 /* ChatModel */,
+				E797983F28193653006123A8 /* ChatView */,
+				E797983E28193642006123A8 /* CharViewModel */,
+			);
+			path = ChatModule;
+			sourceTree = "<group>";
+		};
+		E797982D2819354E006123A8 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E797982628192A30006123A8 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E797982F2819355B006123A8 /* UsersModule */ = {
+			isa = PBXGroup;
+			children = (
+				E797984328193694006123A8 /* UsersView */,
+				E79798422819368E006123A8 /* UsersModel */,
+				E797984128193681006123A8 /* UsersViewModel */,
+			);
+			path = UsersModule;
+			sourceTree = "<group>";
+		};
+		E797983128193574006123A8 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		E797983228193580006123A8 /* PofileViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PofileViewModel;
+			sourceTree = "<group>";
+		};
+		E79798332819358F006123A8 /* ProfileModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProfileModel;
+			sourceTree = "<group>";
+		};
+		E797983428193597006123A8 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				E77C213728190FCE00F6D86C /* ProfileViewController.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		E7979835281935A7006123A8 /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				E77C21342818F93000F6D86C /* SignInViewController.swift */,
+			);
+			path = SignInView;
+			sourceTree = "<group>";
+		};
+		E7979836281935BC006123A8 /* SignInViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignInViewModel;
+			sourceTree = "<group>";
+		};
+		E7979837281935CB006123A8 /* SignInModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignInModel;
+			sourceTree = "<group>";
+		};
+		E7979838281935E4006123A8 /* SignUpViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUpViewModel;
+			sourceTree = "<group>";
+		};
+		E7979839281935EE006123A8 /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				E73235B82818627A00874037 /* SignUpViewController.swift */,
+			);
+			path = SignUpView;
+			sourceTree = "<group>";
+		};
+		E797983A281935F6006123A8 /* SignUpModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUpModel;
+			sourceTree = "<group>";
+		};
+		E797983B2819360F006123A8 /* MainViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainViewModel;
+			sourceTree = "<group>";
+		};
+		E797983C28193618006123A8 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				E732357F2817B93C00874037 /* MainVc.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		E797983D28193634006123A8 /* MainModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainModel;
+			sourceTree = "<group>";
+		};
+		E797983E28193642006123A8 /* CharViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CharViewModel;
+			sourceTree = "<group>";
+		};
+		E797983F28193653006123A8 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				E797981B28192897006123A8 /* ChatViewComtroller.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		E79798402819365A006123A8 /* ChatModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChatModel;
+			sourceTree = "<group>";
+		};
+		E797984128193681006123A8 /* UsersViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UsersViewModel;
+			sourceTree = "<group>";
+		};
+		E79798422819368E006123A8 /* UsersModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UsersModel;
+			sourceTree = "<group>";
+		};
+		E797984328193694006123A8 /* UsersView */ = {
+			isa = PBXGroup;
+			children = (
+				E797982928192A88006123A8 /* UsersViewController.swift */,
+			);
+			path = UsersView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
