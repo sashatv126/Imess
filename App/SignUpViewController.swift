@@ -8,41 +8,77 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-    private let welcomeLabel = UILabel(text: "Good to see you", font: .avenir26())
-    private let emailLabel = UILabel(text: "Email")
-    private let passwordLabel = UILabel(text: "Password")
-    private let confirmPasswordLabel = UILabel(text: "Confirm your password")
-    private let signUpLabel = UILabel(text: "Already onboard?")
+    
+    private lazy var welcomeLabel : UILabel = {
+        let label = UILabel(text: "Just a little more", font: .avenir26())
+        return label
+    }()
+    private lazy var emailLabel : UILabel = {
+        let label = UILabel(text: "Email")
+        label.textAlignment = .left
+        return label
+    }()
+    private lazy var passwordLabel : UILabel = {
+        let label = UILabel(text: "Password")
+        label.textAlignment = .left
+        return label
+    }()
+    private lazy var confirmPasswordLabel : UILabel = {
+        let label = UILabel(text: "Confirm your password")
+        label.textAlignment = .left
+        return label
+    }()
+    private lazy var signUpLabel : UILabel = {
+        let label = UILabel(text: "Already onboard?")
+        return label
+    }()
+    
+    private lazy var signUpButton : UIButton = {
+        let button = UIButton(title: "Sign up", titleColor: .white, backGroundColor: .buttonDark(), isShadow: true)
+        return button
+    }()
+    private lazy var loginButton : UIButton = {
+        let button = UIButton(title: "Login", titleColor: .systemBlue, backGroundColor: .white, isShadow: false)
+        return button
+    }()
     
     private let emailTextField = OneLineTextField(font: .avenir20())
     private let password = OneLineTextField(font: .avenir20())
     private let confirmPassword = OneLineTextField(font: .avenir20())
     
-    private let signUpButton = UIButton(title: "Sign up", titleColor: .white, backGroundColor: .buttonDark(), isShadow: true)
-    private let loginButton = UIButton(title: "Login", titleColor: .systemBlue, backGroundColor: .white, isShadow: false)
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupConstraints()
-    
     }
-   
-
 }
+
 extension SignUpViewController {
     private func setupConstraints() {
         
-        let emailStackView = UIStackView(arrangedSubviews: [emailLabel,emailTextField], axis: .vertical, spacing: 0)
-        let passwordStackView = UIStackView(arrangedSubviews: [passwordLabel,password], axis: .vertical, spacing: 0)
-        let confirmPasswordtackView = UIStackView(arrangedSubviews: [confirmPasswordLabel,confirmPassword], axis: .vertical, spacing: 0)
+        let emailStackView = UIStackView(arrangedSubviews:
+                                         [emailLabel,emailTextField],
+                                         axis: .vertical,
+                                         spacing: 0)
+        let passwordStackView = UIStackView(arrangedSubviews:
+                                            [passwordLabel,password],
+                                            axis: .vertical,
+                                            spacing: 0)
+        let confirmPasswordtackView = UIStackView(arrangedSubviews:
+                                                  [confirmPasswordLabel,confirmPassword],
+                                                  axis: .vertical,
+                                                  spacing: 0)
         
         signUpButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
-        let stackView = UIStackView(arrangedSubviews: [emailStackView,passwordStackView,confirmPasswordtackView,signUpButton], axis: .vertical, spacing: 40)
+        let stackView = UIStackView(arrangedSubviews: [emailStackView,passwordStackView,confirmPasswordtackView,signUpButton],
+                                    axis: .vertical,
+                                    spacing: 40)
         
     
-        let bottomStackView = UIStackView(arrangedSubviews: [signUpLabel,loginButton], axis: .horizontal, spacing: 0)
+        let bottomStackView = UIStackView(arrangedSubviews:
+                                          [signUpLabel,loginButton],
+                                          axis: .horizontal,
+                                          spacing: 0)
         bottomStackView.alignment = .firstBaseline
         
         

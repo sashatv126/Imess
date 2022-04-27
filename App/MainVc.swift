@@ -8,18 +8,40 @@
 import UIKit
 
 class MainVc: UIViewController {
+    
 //MARK: -Image
-    private let logoIm = UIImageView(image: #imageLiteral(resourceName: "gg"), contentMode: .scaleAspectFit)
+    private lazy var logoIm : UIImageView = {
+        let image = UIImageView(image: #imageLiteral(resourceName: "gg"), contentMode: .scaleAspectFit)
+        return image
+    }()
     
 //MARK: -Labels
-    private let google = UILabel(text: "Get Started with")
-    private let emailLabel = UILabel(text: "Or sign up with")
-    private let alreadyOnBoard = UILabel(text: "Already onboard?")
+    private lazy var google : UILabel = {
+        let label = UILabel(text: "Get Started with")
+        return label
+    }()
+    private lazy var emailLabel : UILabel = {
+        let label = UILabel(text: "Or sign up with")
+        return label
+    }()
+    private lazy var alreadyOnBoard : UILabel = {
+        let label = UILabel(text: "Already onboard?")
+        return label
+    }()
     
 //MARK: -Buttons
-    private let emailButton = UIButton(title: "Email", titleColor: .white, backGroundColor: .buttonDark(), isShadow: true)
-    private let loginButton = UIButton(title: "Login", titleColor: .white, backGroundColor: .buttonDark(),isShadow: true)
-    private let googleButton = UIButton(title: "Google", titleColor: .white, backGroundColor: .buttonDark(), isShadow: true)
+    private lazy var emailButton : UIButton = {
+        let button = UIButton(title: "Email", titleColor: .white, backGroundColor: .buttonDark(), isShadow: true)
+        return button
+    }()
+    private lazy var loginButton : UIButton = {
+        let button = UIButton(title: "Login", titleColor: .white, backGroundColor: .buttonDark(),isShadow: true)
+        return button
+    }()
+    private lazy var googleButton : UIButton = {
+        let button = UIButton(title: "Google", titleColor: .white, backGroundColor: .buttonDark(), isShadow: true)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +49,15 @@ class MainVc: UIViewController {
         setupConstraints()
     }
 }
+
 extension MainVc {
     private func setupConstraints() {
         let googleView = ButtonView(label: google, button: googleButton)
         let emailView = ButtonView(label: emailLabel, button: emailButton)
         let loginView = ButtonView(label: alreadyOnBoard, button: loginButton)
         
-        let stackView = UIStackView(arrangedSubviews: [googleView, emailView, loginView],
+        let stackView = UIStackView(arrangedSubviews:
+                                    [googleView, emailView, loginView],
                                     axis: .vertical,
                                     spacing: 40)
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -48,6 +72,7 @@ extension MainVc {
             logoIm.widthAnchor.constraint(equalToConstant: 100),
             logoIm.heightAnchor.constraint(equalToConstant: 100)
         ])
+        
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: logoIm.bottomAnchor, constant: 100),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
