@@ -49,7 +49,7 @@ extension MainVc {
             logoIm.heightAnchor.constraint(equalToConstant: 100)
         ])
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: logoIm.bottomAnchor, constant: 160),
+            stackView.topAnchor.constraint(equalTo: logoIm.bottomAnchor, constant: 100),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])

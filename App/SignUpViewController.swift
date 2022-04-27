@@ -41,7 +41,10 @@ extension SignUpViewController {
         
         let stackView = UIStackView(arrangedSubviews: [emailStackView,passwordStackView,confirmPasswordtackView,signUpButton], axis: .vertical, spacing: 40)
         
-        let bottomStackView = UIStackView(arrangedSubviews: [signUpLabel,loginButton], axis: .horizontal, spacing: -1)
+    
+        let bottomStackView = UIStackView(arrangedSubviews: [signUpLabel,loginButton], axis: .horizontal, spacing: 0)
+        bottomStackView.alignment = .firstBaseline
+        
         
         welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
         stackView.translatesAutoresizingMaskIntoConstraints = false
