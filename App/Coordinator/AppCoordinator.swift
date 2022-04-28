@@ -29,6 +29,5 @@ final class AppCoordinator : CoordinatorProtocol{
     private func showDetailController() {
         
     }
-    
 }
 

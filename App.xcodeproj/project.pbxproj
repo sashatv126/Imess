@@ -29,8 +29,19 @@
 		E797982728192A30006123A8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797982628192A30006123A8 /* TabBarController.swift */; };
 		E797982A28192A88006123A8 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797982928192A88006123A8 /* UsersViewController.swift */; };
 		E797984828196F2C006123A8 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797984728196F2C006123A8 /* CoordinatorProtocol.swift */; };
-		E797984E28196F4B006123A8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797984D28196F4B006123A8 /* Coordinator.swift */; };
+		E797984E28196F4B006123A8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797984D28196F4B006123A8 /* AppCoordinator.swift */; };
 		E79798562819713D006123A8 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79798552819713D006123A8 /* UIViewController + Extension.swift */; };
+		E797986F281A7F44006123A8 /* SignUpViewModelPrtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797986E281A7F44006123A8 /* SignUpViewModelPrtocol.swift */; };
+		E7979872281A7F5D006123A8 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979871281A7F5D006123A8 /* SignUpViewModel.swift */; };
+		E797987A281ACE0C006123A8 /* ProfileViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979879281ACE0C006123A8 /* ProfileViewModelProtocol.swift */; };
+		E797987D281ACE33006123A8 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797987C281ACE33006123A8 /* ProfileViewModel.swift */; };
+		E7979880281ACE59006123A8 /* SignInViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797987F281ACE59006123A8 /* SignInViewModelProtocol.swift */; };
+		E7979884281ACE8C006123A8 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979883281ACE8C006123A8 /* SignInViewModel.swift */; };
+		E7979889281ACEDB006123A8 /* MainViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979888281ACEDB006123A8 /* MainViewModelProtocol.swift */; };
+		E797988C281ACEEA006123A8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797988B281ACEEA006123A8 /* MainViewModel.swift */; };
+		E7979890281ACF3B006123A8 /* ChatViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797988F281ACF3B006123A8 /* ChatViewModelProtocol.swift */; };
+		E7979893281ACF52006123A8 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979892281ACF52006123A8 /* ChatViewModel.swift */; };
+		E7979898281AD083006123A8 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979897281AD082006123A8 /* ViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +69,19 @@
 		E797982628192A30006123A8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E797982928192A88006123A8 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		E797984728196F2C006123A8 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		E797984D28196F4B006123A8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E797984D28196F4B006123A8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E79798552819713D006123A8 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		E797986E281A7F44006123A8 /* SignUpViewModelPrtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelPrtocol.swift; sourceTree = "<group>"; };
+		E7979871281A7F5D006123A8 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		E7979879281ACE0C006123A8 /* ProfileViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelProtocol.swift; sourceTree = "<group>"; };
+		E797987C281ACE33006123A8 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		E797987F281ACE59006123A8 /* SignInViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelProtocol.swift; sourceTree = "<group>"; };
+		E7979883281ACE8C006123A8 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		E7979888281ACEDB006123A8 /* MainViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelProtocol.swift; sourceTree = "<group>"; };
+		E797988B281ACEEA006123A8 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E797988F281ACF3B006123A8 /* ChatViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModelProtocol.swift; sourceTree = "<group>"; };
+		E7979892281ACF52006123A8 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		E7979897281AD082006123A8 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				E797984628196F0C006123A8 /* Coordinator */,
-				E797983128193574006123A8 /* Builder */,
 				E73235BC2818628900874037 /* Application */,
 				E73235BB2818627F00874037 /* Resourses */,
 				E73235A8281857B800874037 /* Extension */,
@@ -245,16 +266,11 @@
 			path = UsersModule;
 			sourceTree = "<group>";
 		};
-		E797983128193574006123A8 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
 		E797983228193580006123A8 /* PofileViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E797985E281A7BA4006123A8 /* Protocols  */,
+				E797987C281ACE33006123A8 /* ProfileViewModel.swift */,
 			);
 			path = PofileViewModel;
 			sourceTree = "<group>";
@@ -285,6 +301,8 @@
 		E7979836281935BC006123A8 /* SignInViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E7979865281A7EA8006123A8 /* Protocols */,
+				E7979883281ACE8C006123A8 /* SignInViewModel.swift */,
 			);
 			path = SignInViewModel;
 			sourceTree = "<group>";
@@ -299,6 +317,8 @@
 		E7979838281935E4006123A8 /* SignUpViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E797986D281A7F26006123A8 /* Protocols */,
+				E7979871281A7F5D006123A8 /* SignUpViewModel.swift */,
 			);
 			path = SignUpViewModel;
 			sourceTree = "<group>";
@@ -321,6 +341,8 @@
 		E797983B2819360F006123A8 /* MainViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E7979886281ACEB1006123A8 /* Protocols */,
+				E797988B281ACEEA006123A8 /* MainViewModel.swift */,
 			);
 			path = MainViewModel;
 			sourceTree = "<group>";
@@ -343,6 +365,8 @@
 		E797983E28193642006123A8 /* CharViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E797988E281ACF1E006123A8 /* Protocols */,
+				E7979892281ACF52006123A8 /* ChatViewModel.swift */,
 			);
 			path = CharViewModel;
 			sourceTree = "<group>";
@@ -365,6 +389,7 @@
 		E797984128193681006123A8 /* UsersViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E7979895281ACF6F006123A8 /* Protocols */,
 			);
 			path = UsersViewModel;
 			sourceTree = "<group>";
@@ -388,7 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				E797985028196F54006123A8 /* Protocols */,
-				E797984D28196F4B006123A8 /* Coordinator.swift */,
+				E797984D28196F4B006123A8 /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -397,6 +422,54 @@
 			isa = PBXGroup;
 			children = (
 				E797984728196F2C006123A8 /* CoordinatorProtocol.swift */,
+				E7979897281AD082006123A8 /* ViewControllerFactory.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E797985E281A7BA4006123A8 /* Protocols  */ = {
+			isa = PBXGroup;
+			children = (
+				E7979879281ACE0C006123A8 /* ProfileViewModelProtocol.swift */,
+			);
+			path = "Protocols ";
+			sourceTree = "<group>";
+		};
+		E7979865281A7EA8006123A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E797987F281ACE59006123A8 /* SignInViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E797986D281A7F26006123A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E797986E281A7F44006123A8 /* SignUpViewModelPrtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E7979886281ACEB1006123A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E7979888281ACEDB006123A8 /* MainViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E797988E281ACF1E006123A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E797988F281ACF3B006123A8 /* ChatViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E7979895281ACF6F006123A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -470,25 +543,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E797987A281ACE0C006123A8 /* ProfileViewModelProtocol.swift in Sources */,
 				E73235BF281866CF00874037 /* OneLineTextField.swift in Sources */,
+				E7979890281ACF3B006123A8 /* ChatViewModelProtocol.swift in Sources */,
 				E73235B92818627A00874037 /* SignUpViewController.swift in Sources */,
 				E797984828196F2C006123A8 /* CoordinatorProtocol.swift in Sources */,
 				E797981C28192897006123A8 /* ChatViewComtroller.swift in Sources */,
+				E797988C281ACEEA006123A8 /* MainViewModel.swift in Sources */,
+				E7979889281ACEDB006123A8 /* MainViewModelProtocol.swift in Sources */,
+				E7979872281A7F5D006123A8 /* SignUpViewModel.swift in Sources */,
 				E797982728192A30006123A8 /* TabBarController.swift in Sources */,
 				E73235992818506D00874037 /* UIFont + Extension.swift in Sources */,
-				E797984E28196F4B006123A8 /* Coordinator.swift in Sources */,
+				E7979884281ACE8C006123A8 /* SignInViewModel.swift in Sources */,
+				E797984E28196F4B006123A8 /* AppCoordinator.swift in Sources */,
 				E7979819281920B1006123A8 /* UISegmentControl + Extension.swift in Sources */,
+				E797987D281ACE33006123A8 /* ProfileViewModel.swift in Sources */,
 				E73235A22818549500874037 /* UILabel + Extension.swift in Sources */,
 				E79798562819713D006123A8 /* UIViewController + Extension.swift in Sources */,
 				E77C213828190FCE00F6D86C /* ProfileViewController.swift in Sources */,
 				E73235802817B93C00874037 /* MainVc.swift in Sources */,
 				E77C21352818F93000F6D86C /* SignInViewController.swift in Sources */,
 				E7979816281917B2006123A8 /* AddPhotoView.swift in Sources */,
+				E7979898281AD083006123A8 /* ViewControllerFactory.swift in Sources */,
+				E797986F281A7F44006123A8 /* SignUpViewModelPrtocol.swift in Sources */,
 				E73235B128185FC900874037 /* UIStackView + Extension.swift in Sources */,
 				E732357C2817B93C00874037 /* AppDelegate.swift in Sources */,
 				E73235A62818556C00874037 /* UIImageView + Extension.swift in Sources */,
 				E732359C2818518400874037 /* UIColor + Extension.swift in Sources */,
+				E7979893281ACF52006123A8 /* ChatViewModel.swift in Sources */,
 				E732357E2817B93C00874037 /* SceneDelegate.swift in Sources */,
+				E7979880281ACE59006123A8 /* SignInViewModelProtocol.swift in Sources */,
 				E732359628184D7F00874037 /* UIButton + Extension.swift in Sources */,
 				E73235AC2818591500874037 /* ButtonView.swift in Sources */,
 				E797982A28192A88006123A8 /* UsersViewController.swift in Sources */,
