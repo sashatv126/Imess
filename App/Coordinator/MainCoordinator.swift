@@ -8,4 +8,5 @@
 import Foundation
 
 final class MainCoordinator : AppCoordinator {
+
 }

@@ -42,7 +42,6 @@
 		E7979890281ACF3B006123A8 /* ChatViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797988F281ACF3B006123A8 /* ChatViewModelProtocol.swift */; };
 		E7979893281ACF52006123A8 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979892281ACF52006123A8 /* ChatViewModel.swift */; };
 		E7979898281AD083006123A8 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979897281AD082006123A8 /* Factory.swift */; };
-		E797989C281AD2DA006123A8 /* FactoryViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797989B281AD2DA006123A8 /* FactoryViewControllers.swift */; };
 		E79798A1281AD695006123A8 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79798A0281AD695006123A8 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +83,6 @@
 		E797988F281ACF3B006123A8 /* ChatViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModelProtocol.swift; sourceTree = "<group>"; };
 		E7979892281ACF52006123A8 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		E7979897281AD082006123A8 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
-		E797989B281AD2DA006123A8 /* FactoryViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryViewControllers.swift; sourceTree = "<group>"; };
 		E79798A0281AD695006123A8 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -418,7 +416,6 @@
 			children = (
 				E797985028196F54006123A8 /* Protocols */,
 				E797984D28196F4B006123A8 /* AppCoordinator.swift */,
-				E797989B281AD2DA006123A8 /* FactoryViewControllers.swift */,
 				E79798A0281AD695006123A8 /* MainCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -550,7 +547,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E797987A281ACE0C006123A8 /* ProfileViewModelProtocol.swift in Sources */,
-				E797989C281AD2DA006123A8 /* FactoryViewControllers.swift in Sources */,
 				E73235BF281866CF00874037 /* OneLineTextField.swift in Sources */,
 				E7979890281ACF3B006123A8 /* ChatViewModelProtocol.swift in Sources */,
 				E73235B92818627A00874037 /* SignUpViewController.swift in Sources */,
