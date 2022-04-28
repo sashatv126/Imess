@@ -7,7 +7,8 @@
 
 import UIKit
 
-final class AppCoordinator : CoordinatorProtocol{
+class AppCoordinator : CoordinatorProtocol{
+    
     var isActive : Bool = false
     unowned var navigationController: UINavigationController?
     
@@ -22,12 +23,11 @@ final class AppCoordinator : CoordinatorProtocol{
             showDetailController()
         }
     }
-    private func showMainController() {
-        
+    
+    func showMainController() {
     }
     
-    private func showDetailController() {
-        
+    func showDetailController() {
     }
 }
 

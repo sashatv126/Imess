@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChatViewComtroller : UIViewController {
+class ChatViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
@@ -22,13 +22,13 @@ struct ChatView : PreviewProvider {
     }
     struct ContainerView : UIViewControllerRepresentable {
         
-        typealias UIViewControllerType = ChatViewComtroller
+        typealias UIViewControllerType = ChatViewController
         
         func makeUIViewController(context: Self.Context) -> Self.UIViewControllerType {
-            return ChatViewComtroller()
+            return ChatViewController()
         }
         
-        func updateUIViewController(_ uiViewController: ChatViewComtroller, context: UIViewControllerRepresentableContext<ChatView.ContainerView>) {
+        func updateUIViewController(_ uiViewController: ChatViewController, context: UIViewControllerRepresentableContext<ChatView.ContainerView>) {
         }
     }
 }

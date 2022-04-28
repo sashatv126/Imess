@@ -7,7 +7,10 @@
 
 import UIKit
 
-protocol CoordinatorProtocol {
+protocol CoordinatorProtocol : Factory {
+    
+    
     var navigationController : UINavigationController? {get set}
+    
     func start()
 }
