@@ -41,9 +41,11 @@
 		E797988C281ACEEA006123A8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797988B281ACEEA006123A8 /* MainViewModel.swift */; };
 		E7979890281ACF3B006123A8 /* ChatViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797988F281ACF3B006123A8 /* ChatViewModelProtocol.swift */; };
 		E7979893281ACF52006123A8 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979892281ACF52006123A8 /* ChatViewModel.swift */; };
-		E7979898281AD083006123A8 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979897281AD082006123A8 /* Factory.swift */; };
 		E79798AC281CF004006123A8 /* MainVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79798AB281CF004006123A8 /* MainVCCoordinator.swift */; };
 		E79798AF281CF6C2006123A8 /* SignInVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79798AE281CF6C2006123A8 /* SignInVCCoordinator.swift */; };
+		E79798B3281D02F9006123A8 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79798B2281D02F9006123A8 /* Flow.swift */; };
+		E7AB4D44281D186E00294F97 /* SignUpVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB4D43281D186E00294F97 /* SignUpVCCoordinator.swift */; };
+		E7AB4D47281D232000294F97 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB4D46281D232000294F97 /* MainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,9 +85,11 @@
 		E797988B281ACEEA006123A8 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		E797988F281ACF3B006123A8 /* ChatViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModelProtocol.swift; sourceTree = "<group>"; };
 		E7979892281ACF52006123A8 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
-		E7979897281AD082006123A8 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		E79798AB281CF004006123A8 /* MainVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCCoordinator.swift; sourceTree = "<group>"; };
 		E79798AE281CF6C2006123A8 /* SignInVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVCCoordinator.swift; sourceTree = "<group>"; };
+		E79798B2281D02F9006123A8 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		E7AB4D43281D186E00294F97 /* SignUpVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVCCoordinator.swift; sourceTree = "<group>"; };
+		E7AB4D46281D232000294F97 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +366,7 @@
 		E797983D28193634006123A8 /* MainModel */ = {
 			isa = PBXGroup;
 			children = (
+				E7AB4D46281D232000294F97 /* MainModel.swift */,
 			);
 			path = MainModel;
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 				E797984D28196F4B006123A8 /* AppCoordinator.swift */,
 				E79798AB281CF004006123A8 /* MainVCCoordinator.swift */,
 				E79798AE281CF6C2006123A8 /* SignInVCCoordinator.swift */,
+				E7AB4D43281D186E00294F97 /* SignUpVCCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -428,7 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				E797984728196F2C006123A8 /* Coordinator.swift */,
-				E7979897281AD082006123A8 /* Factory.swift */,
+				E79798B2281D02F9006123A8 /* Flow.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -570,12 +576,14 @@
 				E73235802817B93C00874037 /* MainVc.swift in Sources */,
 				E77C21352818F93000F6D86C /* SignInViewController.swift in Sources */,
 				E7979816281917B2006123A8 /* AddPhotoView.swift in Sources */,
-				E7979898281AD083006123A8 /* Factory.swift in Sources */,
+				E79798B3281D02F9006123A8 /* Flow.swift in Sources */,
 				E797986F281A7F44006123A8 /* SignUpViewModelPrtocol.swift in Sources */,
 				E73235B128185FC900874037 /* UIStackView + Extension.swift in Sources */,
 				E79798AC281CF004006123A8 /* MainVCCoordinator.swift in Sources */,
 				E732357C2817B93C00874037 /* AppDelegate.swift in Sources */,
 				E73235A62818556C00874037 /* UIImageView + Extension.swift in Sources */,
+				E7AB4D47281D232000294F97 /* MainModel.swift in Sources */,
+				E7AB4D44281D186E00294F97 /* SignUpVCCoordinator.swift in Sources */,
 				E732359C2818518400874037 /* UIColor + Extension.swift in Sources */,
 				E7979893281ACF52006123A8 /* ChatViewModel.swift in Sources */,
 				E732357E2817B93C00874037 /* SceneDelegate.swift in Sources */,

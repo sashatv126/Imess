@@ -8,7 +8,9 @@
 import UIKit
 
 class MainVc: UIViewController {
-    var mainCoordinator : MainFlow?
+    var mainCoordinator : Flow?
+    
+    
 //MARK: -Image
     private lazy var logoIm : UIImageView = {
         let image = UIImageView(image: #imageLiteral(resourceName: "logo"), contentMode: .scaleAspectFit)
@@ -36,6 +38,7 @@ class MainVc: UIViewController {
     }()
     private lazy var loginButton : UIButton = {
         let button = UIButton(title: "Login", titleColor: .white, backGroundColor: .buttonDark(),isShadow: true)
+        button.addTarget(nil, action: #selector(openLogin), for: .touchUpInside)
         return button
     }()
     private lazy var googleButton : UIButton = {
@@ -49,8 +52,10 @@ class MainVc: UIViewController {
         view.backgroundColor = .white
         setupConstraints()
     }
-   
     
+    @objc private func openLogin() {
+        mainCoordinator?.coordinateToNewControler?()
+    }
 }
 
 extension MainVc {

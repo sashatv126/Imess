@@ -8,7 +8,17 @@
 import UIKit
 
 class ChatViewController : UIViewController {
+    
+//    private lazy var searchController : UISearchController = {
+//        
+//    }()
+    
+    
     override func viewDidLoad() {
+        
+       
+        
+        
         super.viewDidLoad()
         view.backgroundColor = .red
     }

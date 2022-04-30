@@ -7,14 +7,9 @@
 
 import UIKit
 
-protocol MainFlow  {
-    func coordinateToSecondVC(model : Any?)
-}
-
-class MainVCCoordinator : MainFlow, Coordinator {
-    
+class MainVCCoordinator : Flow, Coordinator {
+  
     var navigationController : UINavigationController?
-    
     
     init(navigationController : UINavigationController?) {
         self.navigationController = navigationController
@@ -24,16 +19,16 @@ class MainVCCoordinator : MainFlow, Coordinator {
         let mainVc = coordinateToFirstVC()
         if let navigationController = navigationController {
             navigationController.pushViewController(mainVc, animated: true)
-            
+
         }
-        
     }
     
-    func coordinateToSecondVC (model: Any?) {
+    func coordinateToNewControler() {
         let secondCoordinator = SignInVCCoordinator(navigationController: navigationController)
         coordinate(to: secondCoordinator)
-        
     }
+    
+//тут будет сборка MVVM модуля
     func coordinateToFirstVC () -> UIViewController {
         let view = MainVc()
         view.mainCoordinator = self

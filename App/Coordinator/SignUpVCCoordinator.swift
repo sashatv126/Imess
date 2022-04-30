@@ -1,5 +1,5 @@
 //
-//  SignInVCCoordinator.swift
+//  SignUpVCCoordinator.swift
 //  App
 //
 //  Created by Владимир on 30.04.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignInVCCoordinator :  Flow,Coordinator {
+class SignUpVCCoordinator :  Coordinator, Flow {
     
     var navigationController : UINavigationController?
         
@@ -23,20 +23,13 @@ class SignInVCCoordinator :  Flow,Coordinator {
         }
     }
     
-    func coordinateToNewControler() {
-        let secondCoordinator = SignUpVCCoordinator(navigationController: navigationController)
-        coordinate(to: secondCoordinator)
-    }
-    
-    func coordinateWithModel(model: Any) {
-        let secondCoordinator = SignUpVCCoordinator(navigationController: navigationController)
-        coordinate(to: secondCoordinator)
-        print(model)
+    func dismiss() {
+        navigationController?.popViewController(animated: true)
     }
 //тут будет сборка MVVM модуля
     func coordinateToFirstVC () -> UIViewController {
-        let view = SignInViewController()
-        view.signInCoordinator = self
+        let view = SignUpViewController()
+        view.signUpCoordinator = self
         return view
     }
 }

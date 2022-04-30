@@ -9,6 +9,8 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
+    var signUpCoordinator : Flow?
+    
     private lazy var welcomeLabel : UILabel = {
         let label = UILabel(text: "Just a little more", font: .avenir26())
         return label
@@ -39,6 +41,7 @@ class SignUpViewController: UIViewController {
     }()
     private lazy var loginButton : UIButton = {
         let button = UIButton(title: "Login", titleColor: .systemBlue, backGroundColor: .white, isShadow: false)
+        button.addTarget(nil, action: #selector(openLogin), for: .touchUpInside)
         return button
     }()
     
@@ -50,10 +53,16 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         setupConstraints()
     }
+    
+    @objc private func openLogin() {
+        signUpCoordinator?.dismiss?()
+    }
 }
 
 extension SignUpViewController {
     private func setupConstraints() {
+        
+        view.backgroundColor = .white
         
         let emailStackView = UIStackView(arrangedSubviews:
                                          [emailLabel,emailTextField],
