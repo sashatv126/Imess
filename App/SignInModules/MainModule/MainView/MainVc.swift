@@ -8,7 +8,7 @@
 import UIKit
 
 class MainVc: UIViewController {
-    
+    var mainCoordinator : MainFlow?
 //MARK: -Image
     private lazy var logoIm : UIImageView = {
         let image = UIImageView(image: #imageLiteral(resourceName: "logo"), contentMode: .scaleAspectFit)
@@ -49,6 +49,8 @@ class MainVc: UIViewController {
         view.backgroundColor = .white
         setupConstraints()
     }
+   
+    
 }
 
 extension MainVc {

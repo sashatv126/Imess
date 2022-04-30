@@ -9,6 +9,7 @@ import UIKit
 
 class SignInViewController : UIViewController {
     
+    
     private lazy var welcomeLabel : UILabel = {
         let label = UILabel(text: "Glad to see you", font: .avenir26())
         return label

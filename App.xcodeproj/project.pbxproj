@@ -28,7 +28,7 @@
 		E797981C28192897006123A8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797981B28192897006123A8 /* ChatViewController.swift */; };
 		E797982728192A30006123A8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797982628192A30006123A8 /* TabBarController.swift */; };
 		E797982A28192A88006123A8 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797982928192A88006123A8 /* UsersViewController.swift */; };
-		E797984828196F2C006123A8 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797984728196F2C006123A8 /* CoordinatorProtocol.swift */; };
+		E797984828196F2C006123A8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797984728196F2C006123A8 /* Coordinator.swift */; };
 		E797984E28196F4B006123A8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797984D28196F4B006123A8 /* AppCoordinator.swift */; };
 		E79798562819713D006123A8 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79798552819713D006123A8 /* UIViewController + Extension.swift */; };
 		E797986F281A7F44006123A8 /* SignUpViewModelPrtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797986E281A7F44006123A8 /* SignUpViewModelPrtocol.swift */; };
@@ -42,7 +42,8 @@
 		E7979890281ACF3B006123A8 /* ChatViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E797988F281ACF3B006123A8 /* ChatViewModelProtocol.swift */; };
 		E7979893281ACF52006123A8 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979892281ACF52006123A8 /* ChatViewModel.swift */; };
 		E7979898281AD083006123A8 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7979897281AD082006123A8 /* Factory.swift */; };
-		E79798A1281AD695006123A8 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79798A0281AD695006123A8 /* MainCoordinator.swift */; };
+		E79798AC281CF004006123A8 /* MainVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79798AB281CF004006123A8 /* MainVCCoordinator.swift */; };
+		E79798AF281CF6C2006123A8 /* SignInVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79798AE281CF6C2006123A8 /* SignInVCCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +70,7 @@
 		E797981B28192897006123A8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		E797982628192A30006123A8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E797982928192A88006123A8 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
-		E797984728196F2C006123A8 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		E797984728196F2C006123A8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E797984D28196F4B006123A8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E79798552819713D006123A8 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		E797986E281A7F44006123A8 /* SignUpViewModelPrtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelPrtocol.swift; sourceTree = "<group>"; };
@@ -83,7 +84,8 @@
 		E797988F281ACF3B006123A8 /* ChatViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModelProtocol.swift; sourceTree = "<group>"; };
 		E7979892281ACF52006123A8 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		E7979897281AD082006123A8 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
-		E79798A0281AD695006123A8 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		E79798AB281CF004006123A8 /* MainVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCCoordinator.swift; sourceTree = "<group>"; };
+		E79798AE281CF6C2006123A8 /* SignInVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVCCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,7 +418,8 @@
 			children = (
 				E797985028196F54006123A8 /* Protocols */,
 				E797984D28196F4B006123A8 /* AppCoordinator.swift */,
-				E79798A0281AD695006123A8 /* MainCoordinator.swift */,
+				E79798AB281CF004006123A8 /* MainVCCoordinator.swift */,
+				E79798AE281CF6C2006123A8 /* SignInVCCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -424,7 +427,7 @@
 		E797985028196F54006123A8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E797984728196F2C006123A8 /* CoordinatorProtocol.swift */,
+				E797984728196F2C006123A8 /* Coordinator.swift */,
 				E7979897281AD082006123A8 /* Factory.swift */,
 			);
 			path = Protocols;
@@ -550,10 +553,9 @@
 				E73235BF281866CF00874037 /* OneLineTextField.swift in Sources */,
 				E7979890281ACF3B006123A8 /* ChatViewModelProtocol.swift in Sources */,
 				E73235B92818627A00874037 /* SignUpViewController.swift in Sources */,
-				E797984828196F2C006123A8 /* CoordinatorProtocol.swift in Sources */,
+				E797984828196F2C006123A8 /* Coordinator.swift in Sources */,
 				E797981C28192897006123A8 /* ChatViewController.swift in Sources */,
 				E797988C281ACEEA006123A8 /* MainViewModel.swift in Sources */,
-				E79798A1281AD695006123A8 /* MainCoordinator.swift in Sources */,
 				E7979889281ACEDB006123A8 /* MainViewModelProtocol.swift in Sources */,
 				E7979872281A7F5D006123A8 /* SignUpViewModel.swift in Sources */,
 				E797982728192A30006123A8 /* TabBarController.swift in Sources */,
@@ -571,6 +573,7 @@
 				E7979898281AD083006123A8 /* Factory.swift in Sources */,
 				E797986F281A7F44006123A8 /* SignUpViewModelPrtocol.swift in Sources */,
 				E73235B128185FC900874037 /* UIStackView + Extension.swift in Sources */,
+				E79798AC281CF004006123A8 /* MainVCCoordinator.swift in Sources */,
 				E732357C2817B93C00874037 /* AppDelegate.swift in Sources */,
 				E73235A62818556C00874037 /* UIImageView + Extension.swift in Sources */,
 				E732359C2818518400874037 /* UIColor + Extension.swift in Sources */,
@@ -578,6 +581,7 @@
 				E732357E2817B93C00874037 /* SceneDelegate.swift in Sources */,
 				E7979880281ACE59006123A8 /* SignInViewModelProtocol.swift in Sources */,
 				E732359628184D7F00874037 /* UIButton + Extension.swift in Sources */,
+				E79798AF281CF6C2006123A8 /* SignInVCCoordinator.swift in Sources */,
 				E73235AC2818591500874037 /* ButtonView.swift in Sources */,
 				E797982A28192A88006123A8 /* UsersViewController.swift in Sources */,
 			);

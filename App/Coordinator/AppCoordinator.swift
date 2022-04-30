@@ -7,27 +7,20 @@
 
 import UIKit
 
-class AppCoordinator : CoordinatorProtocol{
+class AppCoordinator : Coordinator {
     
-    var isActive : Bool = false
-    unowned var navigationController: UINavigationController?
+    let window : UIWindow?
     
-    init(navigationController : UINavigationController?) {
-        self.navigationController = navigationController
+    init(window : UIWindow?) {
+        self.window = window
     }
     
     func start() {
-        if isActive {
-            showMainController()
-        } else {
-            showDetailController()
-        }
-    }
-    
-    func showMainController() {
-    }
-    
-    func showDetailController() {
+        let navigationController = UINavigationController()
+        let mainVCCoordinatorController = MainVCCoordinator(navigationController : navigationController)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        coordinate(to: mainVCCoordinatorController)
     }
 }
 

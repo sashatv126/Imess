@@ -9,7 +9,6 @@ import UIKit
 
 class TabBarController : UITabBarController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,8 +20,6 @@ class TabBarController : UITabBarController {
             setController(viewController: usersViewController, image: #imageLiteral(resourceName: "Vector"))
         ]
     }
-    
-    
     
     private func setController(viewController : UIViewController,image : UIImage?) -> UIViewController {
         
