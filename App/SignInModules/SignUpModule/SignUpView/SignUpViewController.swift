@@ -37,6 +37,7 @@ class SignUpViewController: UIViewController {
     
     private lazy var signUpButton : UIButton = {
         let button = UIButton(title: "Sign up", titleColor: .white, backGroundColor: .buttonDark(), isShadow: true)
+        button.addTarget(nil, action: #selector(openChats), for: .touchUpInside)
         return button
     }()
     private lazy var loginButton : UIButton = {
@@ -54,8 +55,22 @@ class SignUpViewController: UIViewController {
         setupConstraints()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          navigationController?.setNavigationBarHidden(true, animated: false)
+      }
+      override func viewDidDisappear(_ animated: Bool) {
+          super.viewDidDisappear(animated)
+          navigationController?.setNavigationBarHidden(true, animated: true)
+      }
+      
+    
     @objc private func openLogin() {
         signUpCoordinator?.dismiss?()
+    }
+    
+    @objc private func openChats() {
+        signUpCoordinator?.coordinateWithModel?(model: 1)
     }
 }
 

@@ -8,6 +8,8 @@
 import UIKit
 
 class TabBarController : UITabBarController {
+    
+    var tabcoordinator : Flow?
 
     override func viewDidLoad() {
         super.viewDidLoad()

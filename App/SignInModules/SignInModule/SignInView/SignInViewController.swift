@@ -51,6 +51,7 @@ class SignInViewController : UIViewController {
     }()
     private lazy var loginButton : UIButton = {
         let button = UIButton(title: "Login", titleColor: .white, backGroundColor: .buttonDark(),isShadow: true)
+        button.addTarget(nil, action: #selector(openChats), for: .touchUpInside)
         return button
     }()
     
@@ -62,8 +63,22 @@ class SignInViewController : UIViewController {
         setupConstraints()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          navigationController?.setNavigationBarHidden(true, animated: false)
+      }
+      override func viewDidDisappear(_ animated: Bool) {
+          super.viewDidDisappear(animated)
+          navigationController?.setNavigationBarHidden(false, animated: true)
+      }
+      
+    
     @objc private func openSignUp() {
         signInCoordinator?.coordinateToNewControler?()
+    }
+    
+    @objc private func openChats() {
+        signInCoordinator?.coordinateWithModel?(model: 1)
     }
 }
 

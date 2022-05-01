@@ -53,6 +53,16 @@ class MainVc: UIViewController {
         setupConstraints()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          navigationController?.setNavigationBarHidden(true, animated: false)
+      }
+      override func viewDidDisappear(_ animated: Bool) {
+          super.viewDidDisappear(animated)
+          navigationController?.setNavigationBarHidden(true, animated: true)
+      }
+      
+    
     @objc private func openLogin() {
         mainCoordinator?.coordinateToNewControler?()
     }

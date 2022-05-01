@@ -46,6 +46,8 @@
 		E79798B3281D02F9006123A8 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79798B2281D02F9006123A8 /* Flow.swift */; };
 		E7AB4D44281D186E00294F97 /* SignUpVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB4D43281D186E00294F97 /* SignUpVCCoordinator.swift */; };
 		E7AB4D47281D232000294F97 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB4D46281D232000294F97 /* MainModel.swift */; };
+		E7AB4D4A281ECB9300294F97 /* ProfileVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB4D49281ECB9300294F97 /* ProfileVCCoordinator.swift */; };
+		E7AB4D4D281ECBA300294F97 /* ChatVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB4D4C281ECBA300294F97 /* ChatVCCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		E79798B2281D02F9006123A8 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		E7AB4D43281D186E00294F97 /* SignUpVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVCCoordinator.swift; sourceTree = "<group>"; };
 		E7AB4D46281D232000294F97 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		E7AB4D49281ECB9300294F97 /* ProfileVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVCCoordinator.swift; sourceTree = "<group>"; };
+		E7AB4D4C281ECBA300294F97 /* ChatVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVCCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +154,6 @@
 		E73235A8281857B800874037 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E797982D2819354E006123A8 /* TabBar */,
 				E73235AE28185A9800874037 /* Views */,
 				E732359E281853BD00874037 /* UIKit */,
 			);
@@ -240,6 +243,7 @@
 		E7979823281929DF006123A8 /* ChatModules */ = {
 			isa = PBXGroup;
 			children = (
+				E797982628192A30006123A8 /* TabBarController.swift */,
 				E797982C2819353D006123A8 /* ChatModule */,
 				E797982F2819355B006123A8 /* UsersModule */,
 			);
@@ -254,14 +258,6 @@
 				E797983E28193642006123A8 /* CharViewModel */,
 			);
 			path = ChatModule;
-			sourceTree = "<group>";
-		};
-		E797982D2819354E006123A8 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				E797982628192A30006123A8 /* TabBarController.swift */,
-			);
-			path = TabBar;
 			sourceTree = "<group>";
 		};
 		E797982F2819355B006123A8 /* UsersModule */ = {
@@ -426,6 +422,8 @@
 				E79798AB281CF004006123A8 /* MainVCCoordinator.swift */,
 				E79798AE281CF6C2006123A8 /* SignInVCCoordinator.swift */,
 				E7AB4D43281D186E00294F97 /* SignUpVCCoordinator.swift */,
+				E7AB4D49281ECB9300294F97 /* ProfileVCCoordinator.swift */,
+				E7AB4D4C281ECBA300294F97 /* ChatVCCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -560,6 +558,7 @@
 				E7979890281ACF3B006123A8 /* ChatViewModelProtocol.swift in Sources */,
 				E73235B92818627A00874037 /* SignUpViewController.swift in Sources */,
 				E797984828196F2C006123A8 /* Coordinator.swift in Sources */,
+				E7AB4D4A281ECB9300294F97 /* ProfileVCCoordinator.swift in Sources */,
 				E797981C28192897006123A8 /* ChatViewController.swift in Sources */,
 				E797988C281ACEEA006123A8 /* MainViewModel.swift in Sources */,
 				E7979889281ACEDB006123A8 /* MainViewModelProtocol.swift in Sources */,
@@ -581,6 +580,7 @@
 				E73235B128185FC900874037 /* UIStackView + Extension.swift in Sources */,
 				E79798AC281CF004006123A8 /* MainVCCoordinator.swift in Sources */,
 				E732357C2817B93C00874037 /* AppDelegate.swift in Sources */,
+				E7AB4D4D281ECBA300294F97 /* ChatVCCoordinator.swift in Sources */,
 				E73235A62818556C00874037 /* UIImageView + Extension.swift in Sources */,
 				E7AB4D47281D232000294F97 /* MainModel.swift in Sources */,
 				E7AB4D44281D186E00294F97 /* SignUpVCCoordinator.swift in Sources */,

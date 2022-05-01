@@ -1,13 +1,6 @@
-//
-//  SignInVCCoordinator.swift
-//  App
-//
-//  Created by Владимир on 30.04.2022.
-//
-
 import UIKit
 
-class SignInVCCoordinator :  Flow,Coordinator {
+class ProfileVCCoordinator :  Coordinator, Flow {
     
     var navigationController : UINavigationController?
         
@@ -23,20 +16,17 @@ class SignInVCCoordinator :  Flow,Coordinator {
         }
     }
     
-    func coordinateToNewControler() {
-        let secondCoordinator = SignUpVCCoordinator(navigationController: navigationController)
-        coordinate(to: secondCoordinator)
-    }
-    
     func coordinateWithModel(model: Any) {
         let secondCoordinator = ChatVCCoordinator(navigationController: navigationController)
         coordinate(to: secondCoordinator)
         print(model)
     }
+    
 //тут будет сборка MVVM модуля
     func coordinateToFirstVC () -> UIViewController {
-        let view = SignInViewController()
-        view.signInCoordinator = self
+        let view = ProfileViewController()
+        view.profileCoordinator = self
         return view
     }
 }
+

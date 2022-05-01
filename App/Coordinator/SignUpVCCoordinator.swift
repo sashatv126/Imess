@@ -23,6 +23,12 @@ class SignUpVCCoordinator :  Coordinator, Flow {
         }
     }
     
+    func coordinateWithModel(model: Any) {
+        let secondCoordinator = ProfileVCCoordinator(navigationController: navigationController)
+        coordinate(to: secondCoordinator)
+        print(model)
+    }
+    
     func dismiss() {
         navigationController?.popViewController(animated: true)
     }

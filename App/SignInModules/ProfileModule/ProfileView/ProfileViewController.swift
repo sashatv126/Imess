@@ -9,6 +9,8 @@ import UIKit
 
 class ProfileViewController : UIViewController {
     
+    var profileCoordinator : Flow?
+    
     private lazy var welcomeLabel : UILabel = {
         let label = UILabel(text: "Set up profile", font: .avenir26())
         return label
@@ -31,6 +33,7 @@ class ProfileViewController : UIViewController {
     
     private lazy var goButton : UIButton = {
         let button = UIButton(title: "GO", titleColor: .white, backGroundColor: .buttonDark(),isShadow: true)
+        button.addTarget(nil, action: #selector(tapGo), for: .touchUpInside)
         return button
     }()
     
@@ -47,10 +50,25 @@ class ProfileViewController : UIViewController {
         super.viewDidLoad()
         setupConstraints()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          navigationController?.setNavigationBarHidden(true, animated: false)
+      }
+      override func viewDidDisappear(_ animated: Bool) {
+          super.viewDidDisappear(animated)
+          navigationController?.setNavigationBarHidden(false, animated: true)
+      }
+      
+    @objc private func tapGo() {
+        profileCoordinator?.coordinateWithModel?(model: 1)
+    }
 }
 extension ProfileViewController {
     
     private func setupConstraints() {
+        
+        view.backgroundColor = .white
         
         let fullStackView = UIStackView(arrangedSubviews:
                                         [nameLabel,fullNameTextField],
