@@ -52,6 +52,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigation()
         setupConstraints()
     }
     
@@ -64,6 +65,15 @@ class SignUpViewController: UIViewController {
           navigationController?.setNavigationBarHidden(true, animated: true)
       }
       
+    private func setNavigation() {
+        
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationItem.setHidesBackButton(true, animated: true)
+        
+    }
+    
+    
     
     @objc private func openLogin() {
         signUpCoordinator?.dismiss?()
@@ -72,6 +82,8 @@ class SignUpViewController: UIViewController {
     @objc private func openChats() {
         signUpCoordinator?.coordinateWithModel?(model: 1)
     }
+    
+    
 }
 
 extension SignUpViewController {

@@ -65,13 +65,14 @@ class SignInViewController : UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
           super.viewWillAppear(animated)
-          navigationController?.setNavigationBarHidden(true, animated: false)
+          navigationController?.setNavigationBarHidden(true, animated: true)
       }
       override func viewDidDisappear(_ animated: Bool) {
           super.viewDidDisappear(animated)
-          navigationController?.setNavigationBarHidden(false, animated: true)
+          navigationController?.setNavigationBarHidden(true, animated: true)
       }
       
+   
     
     @objc private func openSignUp() {
         signInCoordinator?.coordinateToNewControler?()
@@ -80,6 +81,7 @@ class SignInViewController : UIViewController {
     @objc private func openChats() {
         signInCoordinator?.coordinateWithModel?(model: 1)
     }
+    
 }
 
 extension SignInViewController {

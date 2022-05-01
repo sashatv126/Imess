@@ -9,19 +9,36 @@ import UIKit
 
 class ChatViewController : UIViewController {
     
-//    private lazy var searchController : UISearchController = {
-//        
-//    }()
-    
-    
+    var tabcoordinator : Flow?
+
+    private let searchController = UISearchController(searchResultsController: nil)
+
     override func viewDidLoad() {
-        
-       
-        
-        
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .white
+        setupSearchController()
     }
+    
+    private func setupSearchController() {
+            navigationItem.searchController = searchController
+            searchController.searchBar.placeholder = "Search"
+            searchController.obscuresBackgroundDuringPresentation = false
+        }
+    
+
+}
+
+extension ChatViewController : UISearchBarDelegate {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        searchBar.endEditing(true)
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    }
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
 }
 
 import SwiftUI

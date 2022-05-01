@@ -25,7 +25,8 @@ class ChatVCCoordinator :  Coordinator, Flow {
 //тут будет сборка MVVM модуля
     func coordinateToFirstVC () -> UIViewController {
         let view = TabBarController()
-        view.tabcoordinator = self
+        let vc = ChatViewController()
+        vc.tabcoordinator = self
         return view
     }
 }
