@@ -33,6 +33,7 @@ class ChatViewController : UIViewController {
         searchController.searchBar.placeholder = "Search"
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.delegate = self
+        title = "Chats"
         }
     
     private func setCollectionView() {
@@ -91,24 +92,5 @@ class ChatViewController : UIViewController {
 extension ChatViewController : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
-    }
-}
-
-import SwiftUI
-
-struct ChatView : PreviewProvider {
-    static var previews: some View {
-        ContainerView().previewDevice("iPhone 12").edgesIgnoringSafeArea(.all)
-    }
-    struct ContainerView : UIViewControllerRepresentable {
-        
-        typealias UIViewControllerType = TabBarController
-        
-        func makeUIViewController(context: Self.Context) -> Self.UIViewControllerType {
-            return TabBarController()
-        }
-        
-        func updateUIViewController(_ uiViewController: TabBarController, context: UIViewControllerRepresentableContext<ChatView.ContainerView>) {
-        }
     }
 }

@@ -27,9 +27,9 @@ struct Chat : Hashable {
 }
 
 let activechats : [Chat] = [
-    Chat(userName: "Sasha", userImage: "f", lastMessege: "Hi"),
-    Chat(userName: "Den", userImage: "f", lastMessege: "Hi"),
-    Chat(userName: "Fill", userImage: "f", lastMessege: "Hi"),
-    Chat(userName: "Rock", userImage: "f", lastMessege: "Hi"),
-    Chat(userName: "GAy", userImage: "f", lastMessege: "Hi")
+    Chat(userName: "Sasha", userImage: "avatar", lastMessege: "Hi"),
+    Chat(userName: "Den", userImage: "avatar", lastMessege: "Hi"),
+    Chat(userName: "Fill", userImage: "avatar", lastMessege: "Hi"),
+    Chat(userName: "Rock", userImage: "avatar", lastMessege: "Hi"),
+    Chat(userName: "GAy", userImage: "avatar", lastMessege: "Hi")
 ]
