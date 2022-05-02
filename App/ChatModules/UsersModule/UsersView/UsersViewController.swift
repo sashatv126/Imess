@@ -18,8 +18,18 @@ class UsersViewController : UIViewController {
     }
     
     private func setupSearchController() {
-            navigationItem.searchController = searchController
-            searchController.searchBar.placeholder = "Search"
-            searchController.obscuresBackgroundDuringPresentation = false
+        navigationItem.searchController = searchController
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.shadowImage = UIImage()
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.searchBar.placeholder = "Search"
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.delegate = self
         }
+}
+
+extension UsersViewController : UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+    }
 }

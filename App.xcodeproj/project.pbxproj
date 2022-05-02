@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E710EDD8281FC1D5001894CE /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E710EDD7281FC1D5001894CE /* ChatCell.swift */; };
+		E710EDDD281FC285001894CE /* CellConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E710EDDC281FC285001894CE /* CellConfigurationProtocol.swift */; };
 		E732357C2817B93C00874037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732357B2817B93C00874037 /* AppDelegate.swift */; };
 		E732357E2817B93C00874037 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732357D2817B93C00874037 /* SceneDelegate.swift */; };
 		E73235802817B93C00874037 /* MainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732357F2817B93C00874037 /* MainVc.swift */; };
@@ -48,9 +50,12 @@
 		E7AB4D47281D232000294F97 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB4D46281D232000294F97 /* MainModel.swift */; };
 		E7AB4D4A281ECB9300294F97 /* ProfileVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB4D49281ECB9300294F97 /* ProfileVCCoordinator.swift */; };
 		E7AB4D4D281ECBA300294F97 /* ChatVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB4D4C281ECBA300294F97 /* ChatVCCoordinator.swift */; };
+		E7AB4D57281FB86000294F97 /* ConstantsForCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB4D56281FB86000294F97 /* ConstantsForCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E710EDD7281FC1D5001894CE /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		E710EDDC281FC285001894CE /* CellConfigurationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurationProtocol.swift; sourceTree = "<group>"; };
 		E73235782817B93C00874037 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E732357B2817B93C00874037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E732357D2817B93C00874037 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 		E7AB4D46281D232000294F97 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		E7AB4D49281ECB9300294F97 /* ProfileVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVCCoordinator.swift; sourceTree = "<group>"; };
 		E7AB4D4C281ECBA300294F97 /* ChatVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVCCoordinator.swift; sourceTree = "<group>"; };
+		E7AB4D56281FB86000294F97 /* ConstantsForCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsForCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E710EDD6281FC1C3001894CE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E710EDD7281FC1D5001894CE /* ChatCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E710EDDB281FC260001894CE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E710EDDC281FC285001894CE /* CellConfigurationProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		E732356F2817B93C00874037 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +176,8 @@
 		E73235A8281857B800874037 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E710EDDB281FC260001894CE /* Protocols */,
+				E7AB4D55281FB84200294F97 /* Constants */,
 				E73235AE28185A9800874037 /* Views */,
 				E732359E281853BD00874037 /* UIKit */,
 			);
@@ -379,6 +403,7 @@
 		E797983F28193653006123A8 /* ChatView */ = {
 			isa = PBXGroup;
 			children = (
+				E710EDD6281FC1C3001894CE /* Cell */,
 				E797981B28192897006123A8 /* ChatViewController.swift */,
 			);
 			path = ChatView;
@@ -484,6 +509,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		E7AB4D55281FB84200294F97 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E7AB4D56281FB86000294F97 /* ConstantsForCollection.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -555,6 +588,7 @@
 			files = (
 				E797987A281ACE0C006123A8 /* ProfileViewModelProtocol.swift in Sources */,
 				E73235BF281866CF00874037 /* OneLineTextField.swift in Sources */,
+				E710EDDD281FC285001894CE /* CellConfigurationProtocol.swift in Sources */,
 				E7979890281ACF3B006123A8 /* ChatViewModelProtocol.swift in Sources */,
 				E73235B92818627A00874037 /* SignUpViewController.swift in Sources */,
 				E797984828196F2C006123A8 /* Coordinator.swift in Sources */,
@@ -564,6 +598,7 @@
 				E7979889281ACEDB006123A8 /* MainViewModelProtocol.swift in Sources */,
 				E7979872281A7F5D006123A8 /* SignUpViewModel.swift in Sources */,
 				E797982728192A30006123A8 /* TabBarController.swift in Sources */,
+				E710EDD8281FC1D5001894CE /* ChatCell.swift in Sources */,
 				E73235992818506D00874037 /* UIFont + Extension.swift in Sources */,
 				E7979884281ACE8C006123A8 /* SignInViewModel.swift in Sources */,
 				E797984E28196F4B006123A8 /* AppCoordinator.swift in Sources */,
@@ -584,6 +619,7 @@
 				E73235A62818556C00874037 /* UIImageView + Extension.swift in Sources */,
 				E7AB4D47281D232000294F97 /* MainModel.swift in Sources */,
 				E7AB4D44281D186E00294F97 /* SignUpVCCoordinator.swift in Sources */,
+				E7AB4D57281FB86000294F97 /* ConstantsForCollection.swift in Sources */,
 				E732359C2818518400874037 /* UIColor + Extension.swift in Sources */,
 				E7979893281ACF52006123A8 /* ChatViewModel.swift in Sources */,
 				E732357E2817B93C00874037 /* SceneDelegate.swift in Sources */,

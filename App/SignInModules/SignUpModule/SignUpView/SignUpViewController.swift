@@ -73,8 +73,6 @@ class SignUpViewController: UIViewController {
         
     }
     
-    
-    
     @objc private func openLogin() {
         signUpCoordinator?.dismiss?()
     }
@@ -82,8 +80,6 @@ class SignUpViewController: UIViewController {
     @objc private func openChats() {
         signUpCoordinator?.coordinateWithModel?(model: 1)
     }
-    
-    
 }
 
 extension SignUpViewController {

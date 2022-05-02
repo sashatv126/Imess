@@ -57,7 +57,7 @@ class ProfileViewController : UIViewController {
       }
       override func viewDidDisappear(_ animated: Bool) {
           super.viewDidDisappear(animated)
-          navigationController?.setNavigationBarHidden(false, animated: true)
+          navigationController?.setNavigationBarHidden(true, animated: true)
       }
       
     @objc private func tapGo() {
